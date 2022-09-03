@@ -7,7 +7,9 @@
         <methods>
           <include name="setUp"/>
           <include name="searchRestaurantTest"/>
+          <include name="changeLocation"/>
           <include name="tearDown"/>
+          <include name="searchItemTest"/>
         </methods>
       </class> <!-- swiggyAppTesting.SwiggyAppTest -->
     </classes>

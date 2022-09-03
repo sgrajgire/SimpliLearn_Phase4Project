@@ -85,16 +85,19 @@ public class SwiggyAppTest {
 	  }
 	  
 	  @Test
-	  public void changeLocation() {
+	  public void changeLocation() throws InterruptedException {
 		  
 		  String location = "Bangalore";
 		  System.out.println("Changing location to " + location);
 		  driver.findElementById("in.swiggy.android:id/arrow_imageview").click();
 		  
 		  driver.findElementById("in.swiggy.android:id/location_description").sendKeys(location);
+		  Thread.sleep(500);
 		  driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]").click();
+		  Thread.sleep(500);
 		  driver.findElementById("in.swiggy.android:id/google_place_search_title_text1").click();
 		  System.out.println("Location changed to " + location);
+		  Thread.sleep(2000);
 	  }
 	  
 	  @AfterTest
