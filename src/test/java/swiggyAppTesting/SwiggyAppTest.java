@@ -90,11 +90,11 @@ public class SwiggyAppTest {
 		  String location = "Bangalore";
 		  System.out.println("Changing location to " + location);
 		  driver.findElementById("in.swiggy.android:id/arrow_imageview").click();
-		  
+		  Thread.sleep(1000);
 		  driver.findElementById("in.swiggy.android:id/location_description").sendKeys(location);
-		  Thread.sleep(500);
+		  Thread.sleep(1000);
 		  driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]").click();
-		  Thread.sleep(500);
+		  Thread.sleep(1000);
 		  driver.findElementById("in.swiggy.android:id/google_place_search_title_text1").click();
 		  System.out.println("Location changed to " + location);
 		  Thread.sleep(2000);
